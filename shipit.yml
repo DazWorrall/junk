@@ -1,0 +1,6 @@
+merge:
+  revalidate_after: 30s
+deploy:
+  override:
+    - sleep 3
+    - echo done
