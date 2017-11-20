@@ -1,5 +1,5 @@
 merge:
-  revalidate_after: 30s
+  require_rebase_after: 1h
 deploy:
   override:
     - sleep 3
