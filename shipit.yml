@@ -1,5 +1,5 @@
 merge:
-  require_rebase_after: 1h
+  require_rebase_commits: 5
 deploy:
   override:
     - sleep 3
