@@ -5,3 +5,7 @@ pipelines:
         command: echo Hello > out.log && touch out.bin && buildkite-agent artifact upload "out.*" gs://shopify-ci-artifacts/dwtest/broken
         agents:
           queue: dwtest
+      - label: subdir, space
+        command: mkdir logs && echo Hello > logs/out\ space.log && touch logs/out\ space.bin && buildkite-agent artifact upload "logs/*" gs://shopify-ci-artifacts/dwtest
+        agents:
+          queue: dwtest
