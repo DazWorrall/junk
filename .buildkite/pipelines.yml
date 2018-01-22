@@ -2,6 +2,6 @@ pipelines:
   dwtest:
     steps:
       - label: Green
-        command: echo Hello
+        command: echo Hello > out.log && touch out.bin && buildkite-agent artifact upload "out.*" gs://shopify-ci-artifacts/dwtest
         agents:
           queue: dwtest
