@@ -1,7 +1,0 @@
-pipelines:
-  dwtest:
-    steps:
-      - label: Green
-        command: echo Hello
-        agents:
-          queue: dwtest
