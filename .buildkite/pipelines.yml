@@ -1,7 +1,9 @@
 pipelines:
   dwtest:
     steps:
-      - label: Green
-        command: echo Hello
+      - label: Env?
+        command: script.sh
         agents:
           queue: dwtest
+        env:
+          DW: hello
