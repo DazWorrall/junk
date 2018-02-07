@@ -5,4 +5,4 @@ if [[ "$BUILDKITE_RETRY_COUNT" -gt 0 ]]; then
     exit 0
 fi
 echo "Fail :("
-exit 1
+exit 75
