@@ -2,5 +2,5 @@ merge:
   require_rebase_commits: 5
 deploy:
   override:
-    - sleep 3
+    - sleep 2
     - echo done
