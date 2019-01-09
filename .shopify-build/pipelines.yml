@@ -1,0 +1,6 @@
+pipelines:
+  dwtest:
+    steps:
+      - label: Green
+        run: sleep 20
+        timeout: 10s
