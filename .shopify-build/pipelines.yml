@@ -1,8 +1,9 @@
 pipelines:
   dwtest:
     steps:
-      - block
       - label: NotGreen
         run:
-        - sleep 20
+          - sleep 20
         timeout: 10s
+        services:
+          redis: 'alpine'
