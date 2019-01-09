@@ -1,7 +1,8 @@
 pipelines:
   dwtest:
     steps:
-      - label: Green
+      - block
+      - label: NotGreen
         run:
         - sleep 20
         timeout: 10s
