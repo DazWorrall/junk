@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: unmanaged-pod-1-1d10a504-80f1b5ff
+  name: unmanaged-pod-1-91b8afe4-d3a40230
   annotations:
     kubernetes-deploy.shopify.io/timeout-override: "60s"
   labels:
     type: unmanaged-pod
-    name: unmanaged-pod-1-1d10a504-80f1b5ff
+    name: unmanaged-pod-1-91b8afe4-d3a40230
     app: hello-cloud
+    foo: bar
 spec:
   activeDeadlineSeconds: 70
   restartPolicy: Never
