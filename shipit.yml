@@ -4,3 +4,8 @@ deploy:
   override:
     - sleep 300
     - echo done
+tasks:
+  ping:
+    action: "PingPong"
+    steps:
+    - echo pong
