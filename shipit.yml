@@ -2,7 +2,7 @@ merge:
   require_rebase_commits: 5
 deploy:
   override:
-    - env
+    - git fetch origin --tags master
     - sleep 30
     - echo done
 tasks:
