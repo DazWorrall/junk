@@ -10,3 +10,5 @@ tasks:
     action: "PingPong"
     steps:
     - echo pong
+plugins:
+  buildkite: {}
