@@ -2,7 +2,7 @@ merge:
   require_rebase_commits: 5
 deploy:
   override:
-    - git fetch origin --tags master
+    - buildkite-trigger dwtest
     - sleep 30
     - echo done
 tasks:
