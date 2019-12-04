@@ -2,7 +2,6 @@ merge:
   require_rebase_commits: 5
 deploy:
   override:
-    - buildkite-trigger dwtest
     - sleep 30
     - echo done
 tasks:
