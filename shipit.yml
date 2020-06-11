@@ -11,3 +11,7 @@ tasks:
     action: "PingPong"
     steps:
     - echo pong
+  pong:
+    action: "PongPing"
+    steps:
+    - echo ping
