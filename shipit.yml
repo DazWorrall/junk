@@ -19,3 +19,7 @@ tasks:
     action: "Print the env"
     steps:
     - env
+  echo_kubeconfig:
+    action: "Echo the kubeconfig"
+    steps:
+    - cat $KUBECONFIG
