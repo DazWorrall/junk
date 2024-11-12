@@ -6,6 +6,26 @@ deploy:
     #    timeout: 1500
     - sleep 30
     - echo done
+  variables:
+    - name: REGION
+      title: Run a deploy in a given region
+      select:
+        - east
+        - west
+        - north
+rollback:
+  override:
+    #- buildkite-trigger dwtest:
+    #    timeout: 1500
+    - sleep 30
+    - echo done
+  variables:
+    - name: REGION
+      title: Run a deploy in a given region
+      select:
+        - east
+        - west
+        - north
 tasks:
   ping:
     action: "PingPong"
