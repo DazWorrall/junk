@@ -1,0 +1,26 @@
+merge:
+  require_rebase_commits: 5
+deploy:
+  override:
+    #- buildkite-trigger dwtest:
+    #    timeout: 1500
+    - cat README.md
+    - sleep 30
+    - echo done
+tasks:
+  ping:
+    action: "PingPong"
+    steps:
+    - echo pong
+  pong:
+    action: "PongPing"
+    steps:
+    - echo ping
+  env:
+    action: "Print the env"
+    steps:
+    - env
+  echo_kubeconfig:
+    action: "Echo the kubeconfig"
+    steps:
+    - cat $KUBECONFIG
